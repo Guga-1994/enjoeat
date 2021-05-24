@@ -1,0 +1,13 @@
+---
+default: -p dot
+bdd: --format pretty #na execução aparece as informações dos steps no cmder
+dot: --format progress #fica uma bolinhas verdes mostrando o progresso dos testes, como na execução do rspec
+html: --format html --out=log/report.html #indica que deve criar um relatório de report do tipo HTML em log 
+chrome: -p dot BROWSER=chrome
+firefox: -p dot BROWSER=firefox
+
+#esse é um arquivo de configuração de parâmetrpo ".yaml", que indica a forma como o 
+#cucumber deve ser executado. Foi especificado as forma  de execução.
+
+chrome_headless: -p dot BROWSER=chrome_headless
+firefox_headless: -p dot BROWSER=firefox_headless
